@@ -20,6 +20,7 @@ Transform any app idea into working code through 5 AI-powered stages using the l
 |---|-------|------|--------|
 | 1️⃣ | **Research** | Validate market & tech landscape | Research findings |
 | 2️⃣ | **Define** | Clarify product scope | PRD (Product Requirements) |
+| 2.5️⃣ | **Visual Design** *(Optional)* | Create UI mockups & design system | Figma designs |
 | 3️⃣ | **Design** | Decide how to build | Technical Design doc |
 | 4️⃣ | **Generate AI Agent Instructions** | Convert docs into agent blueprints | AGENTS.md + tool-specific config files |
 | 5️⃣ | **Build** | Generate & test code | Working MVP |
@@ -32,12 +33,36 @@ Transform any app idea into working code through 5 AI-powered stages using the l
 
 ### ✨ **New: Automated Web App Workflow** ✨
 
-**Skip the manual copy-pasting!**  
+**Skip the manual copy-pasting!**
 We now have an interactive web app that automates the entire process for you.
 
 [![Launch Vibe-Coding Webapp](https://img.shields.io/badge/🚀_Launch-Vibe_Coding_Webapp-blue?style=for-the-badge&logo=vercel)](https://vibeworkflow.app/#/vibe-coding)
 
 </div>
+
+<details>
+<summary><b>🔥 All-in-One Generator (Fastest - NEW!)</b></summary>
+
+### Complete Your MVP Blueprint in One Session
+
+Use the **Part 0 - MVP Generator** to run through ALL stages in a single AI conversation (30-60 minutes):
+
+1. Copy the entire `part0-mvp-generator.md` file
+2. Paste into Claude Pro, Gemini 3 Pro, or ChatGPT Plus (needs 100K+ context)
+3. Answer questions as guided (ONE conversation covers all 5 stages)
+4. Get ALL documents at once:
+   - Research findings
+   - PRD document
+   - Design brief (optional)
+   - Technical design
+   - AGENTS.md + all config files
+5. Start building immediately!
+
+**Best for**: Quick turnaround, clear ideas, focused sessions, streamlined experience
+
+**Time**: 30-60 minutes total (vs 60-90 min doing stages separately)
+
+</details>
 
 <details>
 <summary><b>⚡ Manual Workflow Guide (The Classic Way)</b></summary>
@@ -46,6 +71,7 @@ We now have an interactive web app that automates the entire process for you.
 |:---:|-------------|:----:|--------|
 | 📚 | Copy prompts → Answer questions | 20 min | Research doc |
 | 📝 | Define your app idea | 15 min | PRD doc |
+| 🎨 | *(Optional)* Design UI with Figma AI | 10-20 min | Figma mockups |
 | 🏗️ | Choose technical approach | 15 min | Tech Design doc |
 | 🤖 | Generate AI instructions | 10 min | AGENTS.md + agent config |
 | 💻 | Tell the AI agent: *"Read AGENTS.md and build the MVP"* | 1-3 hrs | **Working MVP!** |
@@ -133,6 +159,40 @@ We now have an interactive web app that automates the entire process for you.
 
 ## 📋 The 5-Step Workflow
 
+### 0️⃣ All-in-One MVP Generator 🔥 *(NEW - Fastest Option)*
+<details>
+<summary><b>Complete all stages in one AI conversation</b> • 30-60 min • Creates everything at once</summary>
+
+**What this does:** Runs you through ALL stages sequentially in one session - from research to complete AGENTS.md setup.
+
+**How it works:**
+1. Copy the entire `part0-mvp-generator.md` file
+2. Paste into Claude Pro, Gemini 3 Pro, or ChatGPT Plus (requires 100K+ context)
+3. Answer guided questions through all 5 stages in one conversation
+4. AI generates all documents automatically:
+   - Research findings
+   - Complete PRD
+   - Design brief (optional)
+   - Technical design document
+   - AGENTS.md + all agent_docs/ files
+   - Tool-specific configs
+
+**💡 Pro Tip:** Use Claude Pro for best results - it handles long contexts exceptionally well.
+
+**When to use:**
+- ✅ You have 45-60 minutes of focused time
+- ✅ Your idea is relatively clear
+- ✅ You want maximum speed and convenience
+- ✅ You prefer a guided, streamlined experience
+
+**When to skip:**
+- Need to pause between stages for team review
+- Want maximum control and iteration at each stage
+- Collaborating with multiple stakeholders
+- Idea needs deep, extended research
+
+</details>
+
 ### 1️⃣ Deep Research 🔍
 <details>
 <summary><b>Validate your idea with AI-powered market research</b> • 20-30 min • Creates <code>research-*.txt</code></summary>
@@ -169,6 +229,52 @@ We now have an interactive web app that automates the entire process for you.
    - UI/UX vision
 4. AI creates professional PRD document
 5. Save as `PRD-[YourAppName]-MVP.md`
+
+</details>
+
+### 2.5️⃣ Visual Design with AI Design Tools 🎨 *(Optional)*
+<details>
+<summary><b>Generate UI mockups and design systems</b> • 10-20 min • Creates Figma designs</summary>
+
+**What this does:** Uses AI-powered design tools to generate professional UI mockups, design systems, and visual components based on your PRD.
+
+**Choose from multiple AI design tools:**
+- **Figma** - Industry standard with AI features and plugins
+- **Uizard** - Text-to-design, fastest for complete mockups
+- **Galileo AI** - High-quality designs from text descriptions
+- **v0 by Vercel** - Generate React/Tailwind components directly
+- **Framer** - Design + prototype + publish in one tool
+- **Adobe XD + Firefly** - Adobe's AI design suite
+- **Canva** - Beginner-friendly quick mockups
+
+**Why this helps:**
+- **Visual clarity** - See your app before coding
+- **Design consistency** - AI generates a cohesive design system
+- **Faster iteration** - Test layouts and flows visually
+- **Developer handoff** - Export designs to code with AI tools
+
+**How it works:**
+1. Copy `part2.5-visual-design.md` into a new AI chat
+2. Attach your PRD document
+3. Choose your preferred design tool (Figma, Uizard, Galileo AI, v0, Framer, Adobe XD, or Canva)
+4. Answer questions about design style, colors, typography, components
+5. AI generates:
+   - Complete design brief with design system specs
+   - Tool-specific prompts ready to paste
+   - Screen inventory and component specifications
+6. Use the generated prompts in your chosen design tool
+7. Export designs and design tokens for developers
+
+**💡 Pro Tips:**
+- Let AI recommend the best tool for your needs if unsure
+- Generate multiple design variations to compare
+- Export design tokens as CSS/JSON for developers
+- v0 by Vercel generates code directly - no separate mockups needed!
+
+**When to skip this step:**
+- Building CLI tools or headless services
+- Using no-code platforms (they handle design)
+- Want to iterate in code directly (developer preference)
 
 </details>
 
@@ -289,11 +395,16 @@ your-app/
 ├── docs/
 │   ├── research-YourApp.txt
 │   ├── PRD-YourApp-MVP.md
+│   ├── designs/                # Optional: Figma exports
+│   │   ├── mockups/
+│   │   ├── design-tokens.json
+│   │   └── assets/
 │   └── TechDesign-YourApp-MVP.md
 ├── agent_docs/                # Detailed context for AI agents
 │   ├── tech_stack.md
 │   ├── code_patterns.md
 │   ├── product_requirements.md
+│   ├── design_system.md       # If using Figma designs
 │   ├── testing.md
 │   └── resources.md           # Curated repos & patterns
 ├── AGENTS.md                  # Universal AI instructions

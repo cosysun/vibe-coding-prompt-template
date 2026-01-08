@@ -53,6 +53,7 @@ Your output must be **modular** to prevent context window overload.
 ### 🧠 Content Extraction Guidelines
 - **From PRD:** Extract exact feature names, user stories, success metrics, and constraints.
 - **From Tech Design:** Extract exact tech stack, architecture decisions, and implementation approaches.
+- **From Design Brief (if provided):** Extract design system tokens, component specs, visual guidelines, and Figma assets.
 - **Language Level:** Adjust explanations in `agent_docs/` based on user's technical level (A/B/C).
   - **Level A (Vibe-coder):** Explain *concepts* simply, focus on "what to do next".
   - **Level B (Developer):** Focus on *architecture*, patterns, and best practices.
@@ -166,6 +167,7 @@ Refer to these for details (load only when needed):
 - `agent_docs/tech_stack.md`: Tech stack & libraries
 - `agent_docs/code_patterns.md`: Code style & patterns
 - `agent_docs/product_requirements.md`: Full PRD
+- `agent_docs/design_system.md`: Design tokens & component specs *(if applicable)*
 
 ## 🔄 Current State (Update This!)
 **Last Updated:** [Date]
@@ -218,6 +220,45 @@ Create a folder named `agent_docs` and add these files. **Fill them with RICH DE
 ```markdown
 # Product Requirements
 [Content from PRD]
+```
+
+#### `agent_docs/design_system.md` *(Optional - if Design Brief provided)*
+*Instructions: Extract design tokens, component specs, and visual guidelines from the Design Brief.*
+```markdown
+# Design System
+
+## Color Palette
+### Primary Colors
+- Primary: #[HEX] - [Usage]
+- Secondary: #[HEX] - [Usage]
+
+### Semantic Colors
+- Success: #[HEX]
+- Warning: #[HEX]
+- Error: #[HEX]
+- Info: #[HEX]
+
+[Full color palette from Design Brief]
+
+## Typography
+- Headings: [Font] - [Sizes]
+- Body: [Font] - [Size]
+- Weights: [List]
+
+## Spacing
+- Base unit: [4px/8px]
+- Scale: [Values]
+
+## Components
+- Buttons: [Style specs]
+- Inputs: [Style specs]
+- Cards: [Style specs]
+- [Other key components]
+
+## Assets Location
+- Mockups: `docs/designs/mockups/`
+- Design tokens: `docs/designs/design-tokens.json`
+- Figma link: [URL]
 ```
 
 #### `agent_docs/testing.md`
@@ -433,13 +474,20 @@ your-app/
 ├── docs/
 │   ├── research-[AppName].txt
 │   ├── PRD-[AppName]-MVP.md
+│   ├── designs/                  ← Optional: Figma exports
+│   │   ├── design-brief.md
+│   │   ├── mockups/
+│   │   ├── design-tokens.json
+│   │   └── assets/
 │   └── TechDesign-[AppName]-MVP.md
 ├── AGENTS.md                    ← Universal instructions
 ├── agent_docs/                  ← Detailed documentation
 │   ├── tech_stack.md
 │   ├── code_patterns.md
 │   ├── product_requirements.md
-│   └── testing.md
+│   ├── design_system.md         ← If designs exist
+│   ├── testing.md
+│   └── resources.md
 ├── [Tool-specific files]       ← Based on your selection
 └── (your code will go here)
 ```
