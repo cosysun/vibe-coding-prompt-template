@@ -208,9 +208,12 @@ Use the **Part 0 - MVP Generator** to run through ALL stages in a single AI conv
    - Competitor breakdown
    - Technical recommendations
    - Cost estimates
+   - **Platform review risk assessment** (for App Store/Google Play submissions)
 5. Save output as `research-[YourAppName].txt`
 
 **💡 Pro Tip:** Use Gemini 3 Pro for better research (1,048,576-token context window).
+
+**🔒 New: Review Risk Check** - If targeting mobile app stores, the research automatically includes compliance analysis and rejection risk mitigation strategies.
 </details>
 
 ### 2️⃣ Product Requirements (PRD) 📝
